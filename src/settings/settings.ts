@@ -7,6 +7,7 @@ interface LatexSuiteBasicSettings {
 	snippetsEnabled: boolean;
 	snippetsTrigger: "Tab" | " "
 	suppressSnippetTriggerOnIME: boolean;
+	suppressIMEWarning: boolean;
 	removeSnippetWhitespace: boolean;
 	autoDelete$: boolean;
 	loadSnippetsFromFile: boolean;
@@ -61,6 +62,7 @@ export const DEFAULT_SETTINGS: LatexSuitePluginSettings = {
 	snippetsEnabled: true,
 	snippetsTrigger: "Tab",
 	suppressSnippetTriggerOnIME: true,
+	suppressIMEWarning: false,
 	removeSnippetWhitespace: true,
 	autoDelete$: true,
 	loadSnippetsFromFile: false,
@@ -79,7 +81,7 @@ export const DEFAULT_SETTINGS: LatexSuitePluginSettings = {
 	matrixShortcutsEnabled: true,
 	taboutEnabled: true,
 	autoEnlargeBrackets: true,
-	wordDelimiters: "., +-\\n\t:;!?\\/{}[]()=~$",
+	wordDelimiters: "., +-\\n\t:;!?\\/{}[]()=~$'\"|`<>*^%#@&",
 
 	// Raw settings
 	autofractionExcludedEnvs:
